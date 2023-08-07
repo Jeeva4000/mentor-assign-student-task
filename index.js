@@ -1,9 +1,8 @@
 import express from 'express';
-import { mentorsStudentRouter } from './mentorstudentrouter.js';
-import { createDB } from "./db.js";
+import { mentorsStudentRouter } from './mentor-student-router.js'; // Updated filename
+import { createDB } from './db.js';
 const app = express();
-const port = process.env.PORT || 3030; 
-
+const port = process.env.PORT || 3030;
 
 app.use(express.json());
 
