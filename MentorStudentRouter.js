@@ -101,4 +101,4 @@ router.get('/students/:studentId/previous-mentor', async (req, res) => {
   }
 });
 
-module.exports =router
+module.exports = router;
