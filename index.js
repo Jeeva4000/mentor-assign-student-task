@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import { createDB } from "./db.js";
-import { MentorStudentRouter } from "./mentorstudentrouter.js";
+import { mentorsStudentRouter } from "./mentorsStudentRouter.js";
 
 
 // Init the server
@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 
 // Mentors-Students Router
-app.use("/", MentorStudentRouter);
+app.use("/", mentorsStudentRouter);
 
 // Starting the server
 app.listen(3030, () => console.log("Server running on localhost:3030"));

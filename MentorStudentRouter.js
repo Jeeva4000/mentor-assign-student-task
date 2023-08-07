@@ -123,4 +123,4 @@ router.post("/students", async (req, res) => {
       }
   });
   
-export const MentorStudentRouter =router
+export const mentorsStudentRouter =router
