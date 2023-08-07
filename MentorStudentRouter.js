@@ -1,7 +1,7 @@
-import express from "express"
-import { Mentors, Students } from "./mentor-student-Schema.js";
+import express from 'express';
+import { Mentors, Students } from './mentor-student-Schema.js';
 
-const router = express.Router();
+export const router = express.Router();
 
 
 // 1. Create mentor API

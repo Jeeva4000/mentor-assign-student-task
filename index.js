@@ -1,17 +1,14 @@
-import express from "express";
-import mongoose from "mongoose";
+import express from 'express';
+import { mentorsStudentRouter } from './mentorstudentrouter.js';
 import { createDB } from "./db.js";
-import { mentorsStudentRouter } from "./mentorsStudentRouter.js";
-
-
-// Init the server
 const app = express();
+const port = process.env.PORT || 3000;
 
-// Middleware
 app.use(express.json());
 
-// Mentors-Students Router
-app.use("/", mentorsStudentRouter);
+// Use the mentorsStudentRouter for your routes
+app.use('/api', mentorsStudentRouter);
 
-// Starting the server
-app.listen(3030, () => console.log("Server running on localhost:3030"));
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
