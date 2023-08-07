@@ -1,9 +1,5 @@
 const express = require ("express");
 const db = require("./db.js")
-// const mentorSchema = require
-//  import { mentorSchema } from "./mentorSchema.js";
-//  const  studentSchema = require("./studentSchema.js") ;
-
 const mentorStudentRouter= require("./mentorstudentrouter.js");
 
 //init the server
